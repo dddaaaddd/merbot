@@ -15,7 +15,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 local https = require "ssl.https"
 local serpent = require "serpent"
-local json = (loadfile "./libs/JSON.lua")()
+local json = (loadfile "./bot/libs/JSON.lua")()
 
 local config = (loadfile './data/config.lua')()
 local url = 'https://api.telegram.org/bot' .. config.bot_api.key
